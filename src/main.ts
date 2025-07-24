@@ -16,7 +16,7 @@ async function bootstrap() {
   const result = await client.send<string>('get_time', {}).toPromise();
   console.log('Hora recibida desde time-service:', result);
 
-  await app.listen(3000);
+  await app.listen(3005);
 }
 
 bootstrap();
